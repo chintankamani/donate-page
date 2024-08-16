@@ -1,0 +1,181 @@
+/* == TABLE OF CONTENTS ==
+1. Button CSS
+2. Input CSS
+3. Selectbox CSS
+4. Text CSS
+5. Heading CSS
+6. Container CSS
+*/
+
+@font-face {
+  font-family: 'P22 Mackinac Pro';
+  src: url('/fonts/P22MackinacPro-Book_25.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CoFo Sans VF';
+  src: url('CoFoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 1. Button CSS */
+.ui.button.round {
+    border-radius: var(--radius-lg);
+  }
+  
+  .ui.button.size-xs {
+    height: 52px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 18px;
+  }
+  
+  .ui.button.fill.main_cream {
+    background-color: var(--main_cream);
+    color: var(--main_brown);
+  }
+  
+  .ui.button {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: var(--main_brown);
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: var(--main_cream);
+    border-radius: var(--radius-lg);
+  }
+  
+  /* 2. Input CSS */
+  .ui.input.round {
+    border-radius: var(--radius-md);
+  }
+  
+  .ui.input.size-xs {
+    height: 50px;
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+    font-size: 16px;
+  }
+  
+  .ui.input.outline.main_cream {
+    color: var(--main_cream);
+    border: 1px solid var(--main_cream);
+  }
+  
+  .ui.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    color: var(--main_cream);
+    font-family: 'CoFo Sans VF', sans-serif;
+    font-size: 16px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--main_cream);
+  }
+  
+  /* 3. Selectbox CSS */
+  .ui.selectbox.square {
+    border-radius: 0;
+    background-color: #953a57;
+  }
+  
+  .ui.selectbox.size-xs {
+    height: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 16px;
+  }
+  
+  .ui.selectbox {
+    display: flex;
+  }
+  
+  /* 4. Text CSS */
+  .ui.text.size-p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ui.text.size-button {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ui.text {
+    color: var(--main_cream);
+    font-family: 'CoFo Sans VF', sans-serif;
+  }
+  
+  /* 5. Heading CSS */
+  .ui.heading.size-h1 {
+    font-family: P22 Mackinac Pro;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: bold;
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .ui.heading.size-h1 {
+      font-size: 46px;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .ui.heading.size-h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  
+  .ui.heading.size-h2 {
+    font-family: P22 Mackinac Pro;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: bold;
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .ui.heading.size-h2 {
+      font-size: 38px;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .ui.heading.size-h2 {
+      font-size: 36px;
+    }
+  }
+  
+  .ui.heading.size-h3 {
+    font-family: P22 Mackinac Pro;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: bold;
+  }
+  
+  .ui.heading {
+    color: var(--main_brown);
+    font-family: P22 Mackinac Pro;
+  }
+  
+  /* 6. Container CSS */
+  .container-xs {
+    max-width: 1164px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
