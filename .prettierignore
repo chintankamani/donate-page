@@ -1,0 +1,32 @@
+# Node modules directory
+node_modules
+
+# Build output directories
+dist
+build
+out
+
+# Logs
+*.log
+
+# Compiled files
+*.min.js
+*.bundle.js
+
+# Configuration files
+*.config.js
+*.config.ts
+
+# TypeScript declaration files
+*.d.ts
+
+# Misc
+*.md
+*.json
+
+# Ignore all files in specific folders
+coverage/
+public/
+
+# Ignore files in specific directories
+src/legacy-code/
