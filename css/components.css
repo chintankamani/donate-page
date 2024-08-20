@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'CoFo Sans VF';
-  src: url('CoFoSans-Regular.ttf') format('truetype');
+  src: url('/fonts/CoFoSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

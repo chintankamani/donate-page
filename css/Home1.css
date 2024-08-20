@@ -7,7 +7,7 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'CoFo Sans VF';
   src: url('CoFoSans-Regular.eot');
   src: local('CoFo Sans'), local('CoFoSans-Regular'),
@@ -15,6 +15,13 @@
       url('CoFoSans-Regular.woff2') format('woff2'),
       url('CoFoSans-Regular.woff') format('woff'),
       url('CoFoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'CoFo Sans VF';
+  src: url('CoFoSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
