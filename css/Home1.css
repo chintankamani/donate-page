@@ -112,7 +112,7 @@
   height: 540px;
   padding: 50px 0;
   background-color: var(--college_maroon);
-  background-image: url(../public/images/img_frame_48095758.png);
+  background-image: url(../public/images/img_frame_48095758.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -796,7 +796,6 @@ footer {
   border-bottom: 2px solid var(--main_brown);
 }
 
-
 .accordion-header {
   padding: 15px 0;
   cursor: pointer;
@@ -824,7 +823,6 @@ footer {
 .accordion-item.active .accordion-content {
   display: block; /* Visible when active */
 }
-
 
 .accordion-content p {
   margin: 15px 0;
