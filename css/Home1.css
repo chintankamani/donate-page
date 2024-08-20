@@ -813,23 +813,31 @@ footer {
 }
 
 .accordion-content {
+  opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  padding: 0 15px;
+  transition: opacity 0.2s ease, max-height 0.6s ease;
+  padding: 15px 0;
   color: var(--main_brown) !important;
   width: 85%;
   line-height: 22px;
 }
 
+.accordion-item.active .accordion-content {
+  opacity: 1;
+  max-height: 400px;
+  padding: 15px 0;
+}
+
+
 .accordion-content p {
   margin: 15px 0;
 }
 
-.accordion-item.active .accordion-content {
+/* .accordion-item.active .accordion-content {
   max-height: 400px;
   padding: 15px 0;
-}
+} */
 
 .faq-section {
   display: flex;

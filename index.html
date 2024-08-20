@@ -413,18 +413,26 @@
         });
 
         function toggleAccordion(element) {
-            const accordionItem = element.parentElement;
-            const accordionContent = accordionItem.querySelector('.accordion-content');
+                const accordionItem = element.parentElement;
+                const accordionContent = accordionItem.querySelector('.accordion-content');
 
-            if (accordionItem.classList.contains('active')) {
-                accordionItem.classList.remove('active');
-            } else {
-                const activeItems = document.querySelectorAll('.accordion-item.active');
-                activeItems.forEach((item) => item.classList.remove('active'));
+                if (accordionItem.classList.contains('active')) {
+                    accordionItem.classList.remove('active');
+                    // Use setTimeout to ensure the transition is applied before hiding the content
+                    setTimeout(() => {
+                        accordionContent.style.maxHeight = null;
+                    }, 400); // Matches the CSS transition duration
+                } else {
+                    const activeItems = document.querySelectorAll('.accordion-item.active');
+                    activeItems.forEach((item) => {
+                        item.classList.remove('active');
+                        item.querySelector('.accordion-content').style.maxHeight = null;
+                    });
 
-                accordionItem.classList.add('active');
+                    accordionItem.classList.add('active');
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                }
             }
-        }
 
 
     </script>
