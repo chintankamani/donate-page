@@ -403,6 +403,12 @@ footer {
   .footer_contact-row {
     flex-direction: column;
   }
+
+  @media only screen and (max-width: 640px) {
+    .footer_contact-row {
+      gap: var(--space-lg);
+    }
+  }
 }
 
 .footer_contact-info {
@@ -423,7 +429,7 @@ footer {
 @media only screen and (max-width: 640px) {
   .footer_contact-info {
     width: 100%;
-    gap: var(--space-md);
+    gap: var(--space-sm);
   }
 }
 
@@ -484,7 +490,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: var(--space-md);
+  gap: var(--space-lg);
   @media only screen and (max-width: 1050px) {
     flex-direction: column;
   }
@@ -498,6 +504,10 @@ footer {
   align-items: start;
   @media only screen and (max-width: 1050px) {
     width: 100%;
+  }
+  @media only screen and (max-width: 640px) {
+    width: 100%;
+    gap: var(--space-sm);
   }
 }
 
@@ -521,8 +531,6 @@ footer {
 }
 
 .footer_newsletter-header {
-  padding-left: 4px;
-  padding-right: 4px;
   gap: 16px;
   display: flex;
   flex-direction: column;
@@ -795,12 +803,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-self: start;
-  font-family: 'P22 Mackinac Pro', sans-serif;
+  font-family: "P22 Mackinac Pro", sans-serif;
   font-size: 22px;
   font-weight: 500;
   color: var(--main_brown);
 }
-
 
 .accordion-header:hover {
 }
