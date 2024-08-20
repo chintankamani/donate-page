@@ -793,8 +793,9 @@ footer {
 .accordion-item {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 2px solid var(--main_brown); /* Added border-bottom */
+  border-bottom: 2px solid var(--main_brown);
 }
+
 
 .accordion-header {
   padding: 15px 0;
@@ -813,10 +814,7 @@ footer {
 }
 
 .accordion-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.2s ease, max-height 0.6s ease;
+  display: none; /* Hidden by default */
   padding: 15px 0;
   color: var(--main_brown) !important;
   width: 85%;
@@ -824,9 +822,7 @@ footer {
 }
 
 .accordion-item.active .accordion-content {
-  opacity: 1;
-  max-height: 400px;
-  padding: 15px 0;
+  display: block; /* Visible when active */
 }
 
 

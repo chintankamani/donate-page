@@ -199,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="flex-col-center-center column">
                     <div class="faq-section container-xs">
                         <div class="faq-section_headings">
@@ -217,9 +217,15 @@
                                     <img src="/public/images/img_plus.svg" alt="Toggle icon" class="faq-icon" />
                                 </div>
                                 <div class="accordion-content ui text size-p">
-                                    <p>The Shrimad Rajchandra Jivamaitridham Project is funded by Shrimad Rajchandra Jivadaya Trust (SRJT). Every donor who is
-                                    a resident of India, as well as Non-Resident Indians (NRIs) holding an Indian Passport and also having taxable income in
-                                    India, can claim income tax benefit from the donation made to SRJT under section 80G of Income Tax Act of 1961.</p>
+                                    <p>The Shrimad Rajchandra Jivamaitridham Project is funded by Shrimad Rajchandra
+                                        Jivadaya Trust
+                                        (SRJT). Every donor who is
+                                        a resident of India, as well as Non-Resident Indians (NRIs) holding an Indian
+                                        Passport and also
+                                        having taxable income in
+                                        India, can claim income tax benefit from the donation made to SRJT under section
+                                        80G of Income
+                                        Tax Act of 1961.</p>
                                 </div>
                             </div>
 
@@ -239,11 +245,13 @@
                                     <img src="/public/images/img_plus.svg" alt="Toggle icon" class="faq-icon" />
                                 </div>
                                 <div class="accordion-content ui text size-p">
-                                    <p>Our primary source of funding is the generous donations of individual donors, corporates and foundations. We also
-                                    receive funding/grants from the following:
-                                    1. Central and State Governments of India
-                                    2. Corporate Sponsorship for specific initiatives and CSR contributions
-                                    3. Fundraising events</p>
+                                    <p>Our primary source of funding is the generous donations of individual donors,
+                                        corporates and
+                                        foundations. We also
+                                        receive funding/grants from the following:
+                                        1. Central and State Governments of India
+                                        2. Corporate Sponsorship for specific initiatives and CSR contributions
+                                        3. Fundraising events</p>
                                 </div>
                             </div>
                         </div>
@@ -412,28 +420,34 @@
             });
         });
 
+        // function toggleAccordion(element) {
+        //         const accordionItem = element.parentElement;
+        //         const accordionContent = accordionItem.querySelector('.accordion-content');
+
+        //         if (accordionItem.classList.contains('active')) {
+        //             accordionItem.classList.remove('active');
+        //             // Use setTimeout to ensure the transition is applied before hiding the content
+        //             setTimeout(() => {
+        //                 accordionContent.style.maxHeight = null;
+        //             }, 400); // Matches the CSS transition duration
+        //         } else {
+        //             const activeItems = document.querySelectorAll('.accordion-item.active');
+        //             activeItems.forEach((item) => {
+        //                 item.classList.remove('active');
+        //                 item.querySelector('.accordion-content').style.maxHeight = null;
+        //             });
+
+        //             accordionItem.classList.add('active');
+        //             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        //         }
+        //     }
+
         function toggleAccordion(element) {
-                const accordionItem = element.parentElement;
-                const accordionContent = accordionItem.querySelector('.accordion-content');
+            const accordionItem = element.parentElement;
 
-                if (accordionItem.classList.contains('active')) {
-                    accordionItem.classList.remove('active');
-                    // Use setTimeout to ensure the transition is applied before hiding the content
-                    setTimeout(() => {
-                        accordionContent.style.maxHeight = null;
-                    }, 400); // Matches the CSS transition duration
-                } else {
-                    const activeItems = document.querySelectorAll('.accordion-item.active');
-                    activeItems.forEach((item) => {
-                        item.classList.remove('active');
-                        item.querySelector('.accordion-content').style.maxHeight = null;
-                    });
-
-                    accordionItem.classList.add('active');
-                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                }
-            }
-
+            // Toggle the 'active' class
+            accordionItem.classList.toggle('active');
+        }
 
     </script>
     </div>
