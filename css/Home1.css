@@ -605,7 +605,7 @@ footer {
   padding: 0 33px;
   background-color: var(--main_cream) !important;
   width: 100%;
-  height: 52px;
+  height: 58px;
   border-radius: 26px !important;
   border: 1px solid var(--main_cream);
 }
@@ -687,15 +687,15 @@ footer {
 .add-to-cart_button {
   font-family: "CoFo Sans VF";
   color: var(--main_brown) !important;
-  padding: 0 33px;
+  padding: 20px 0;
   width: 100%;
-  height: 52px;
+  height: 32px;
   border-radius: 26px !important;
 }
 
 .input-box {
   display: flex;
-  padding: 15px 40px;
+  padding: 13px 40px;
   background-color: var(--main_cream);
   border-radius: 26px !important;
   width: 100%;
@@ -706,7 +706,7 @@ footer {
 .input-box-1 {
   display: flex;
   align-items: center;
-  padding: 15px 40px;
+  padding: 13px 40px;
   background-color: var(--main_cream);
   border-radius: 26px !important;
   width: 100%;
