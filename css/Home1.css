@@ -325,7 +325,7 @@
 
 @media only screen and (max-width: 550px) {
   .faq-section {
-    gap: 38px;
+    gap: 20px;
   }
 }
 
@@ -340,6 +340,7 @@
 @media only screen and (max-width: 1050px) {
   .faq-section_headings {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -361,7 +362,7 @@
   flex-direction: column;
   flex: 1;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -377,7 +378,6 @@
   gap: var(--space-md);
   position: relative;
   cursor: pointer;
-  padding-right: 40px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -392,7 +392,7 @@
   align-items: center;
   gap: var(--space-md);
   cursor: pointer;
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -416,7 +416,8 @@ details[open] .faq-section_question::before {
 
 .faq-section_answer {
   display: flex;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  padding-bottom: 15px;
 }
 
 .faq-section_answer-text {
@@ -794,6 +795,7 @@ footer {
 }
 
 .add-to-cart_button {
+  font-family: "CoFo Sans VF";
   color: var(--main_brown) !important;
   padding: 0 33px;
   width: 100%;
@@ -807,6 +809,8 @@ footer {
   background-color: var(--main_cream);
   border-radius: 26px !important;
   width: 100%;
+  color: var(--main_brown);
+  font-family: "CoFo Sans VF";
 }
 
 .input-box-1 {
@@ -821,25 +825,26 @@ footer {
 .currency-1 {
   color: var(--main_brown);
   padding-right: 10px;
+  font-family: "CoFo Sans VF";
 }
 
 .currency {
   color: var(--main_brown);
   padding-right: 10px;
   width: 110px;
-}
-
-.input-box {
-  color: var(--main_brown);
+  font-family: "CoFo Sans VF";
 }
 
 .input-box input::placeholder {
   color: var(--main_brown);
   width: 150px;
+  font-family: "CoFo Sans VF";  
 }
 
 .finalValue {
   width: 200px;
+  font-family: "CoFo Sans VF";
+  color: var(--main_brown);
 }
 
 .input-size {
@@ -848,8 +853,34 @@ footer {
   padding: 4px 0;
   padding-left: 4px;
   border-radius: 3px;
+  font-family: "CoFo Sans VF";
+  color: var(--main_brown);
 }
 
 .box-width {
   width: 200px;
+}
+
+@media (max-width: 640px) {
+  .input-box-1 {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .finalValue {
+    width:100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .input-box,
+  .input-box-1,
+  .currency-1,
+  .currency,
+  .input-box input::placeholder,
+  .finalValue,
+  .input-size {
+    font-size: 14px;
+  }
 }
