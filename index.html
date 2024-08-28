@@ -42,46 +42,42 @@
 <body>
     <div class="donate-navigation">
         <div class="home">
+            <div class="main-logo"><img src="public/images/srlc-logo.svg" alt="logo"></div>
             <div class="columndonate">
-
                 <!-- header section -->
                 <div class="rowlayerone_one">
                     <div class="columnlayerone">
                         <header class="header">
-                            <img src="public/images/img_footer_logo.svg" alt="Header Image" class="header_logo" />
-                            <div class="navigation-row">
-                                <div class="header_contact">
-                                    <a href="#">
-                                        <img src="public/images/img_call.svg" alt="Call Icon"
-                                            class="header_contact_icon" />
-                                    </a>
-                                    <p class="ui text size-p box-width">Contact: +91 0000 0000</p>
-                                </div>
-
-                                <select class="header_language-dropdown ui selectbox size-xs square">
-                                    <option value="option1">EN</option>
-                                    <img src="/public/images/img_layer_1.svg" alt="Header Image" class="down-arrow" />
-                                    <option value="option2">HI</option>
-                                </select>
-                            </div>
+                            <img src="public/images/logo.svg" alt="Header Image" class="header_logo" />
+                            <button id="donate-button"
+                                class="header-button button donate main_cream size-xs fill round">
+                                Donate
+                            </button>
                         </header>
                         <div class="row">
                             <div class="home_rowheadings container-xs">
                                 <h1 class="home_rowheadings_quote ui heading size-h1">
-                                    <span>"We only</span>
-                                    <span class="home_rowheadings_quote-span">have</span>
-                                    <span>what we</span>
-                                    <span class="home_rowheadings_quote-span">give"</span>
+                                    Give Confidently.
                                 </h1>
+                                <p class="header-text">Shrimad Rajchandra Love and Care (SRLC) has been accredited with
+                                    Platinum Seal by Guidestar. SRLC also enjoys a special
+                                    consultative status with the United Nations Economic and Social Council (UN-ECOSOC).
+                                    When you donate to SRLC, your
+                                    donation is being put to work right away, making sure that individuals in need are
+                                    getting the support they deserve.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="background-flex">
+                        <img src="public/images/background.svg" alt="Header bg" class="" />
+                        <img src="public/images/background.svg" alt="Header bg" class="" />
                     </div>
                 </div>
 
                 <!-- hero banner section -->
                 <div class="home-1">
                     <div class="user-profile">
-                        <img src="public/images/img_rectangle_11.webp" alt="Image" class="user-profile_image" />
+                        <img src="public/images/rectangle-1.webp" alt="Image" class="user-profile_image" />
                         <div class="user-profile_content">
                             <h2 class="user-profile_title ui heading size-h3">
                                 Contribute to the new Shrimad Rajchandra Animal Hospital
@@ -104,7 +100,7 @@
                     </div>
 
                     <div class="user-profile">
-                        <img src="public/images/img_rectangle_11_2.webp" alt="Image" class="user-profile_image" />
+                        <img src="public/images/rectangle-2.webp" alt="Image" class="user-profile_image" />
                         <div class="user-profile_content">
                             <h2 class="user-profile_title ui heading size-h3">
                                 Contribute to the new Shrimad Rajchandra Animal Hospital
@@ -128,7 +124,7 @@
                     </div>
 
                     <div class="user-profile">
-                        <img src="public/images/img_rectangle_11_3.webp" alt="Image" class="user-profile_image" />
+                        <img src="public/images/rectangle-3.webp" alt="Image" class="user-profile_image" />
                         <div class="user-profile_content">
                             <h4 class="user-profile_title ui heading size-h3">
                                 Contribute to the new Shrimad Rajchandra Animal Hospital
@@ -152,7 +148,7 @@
                     </div>
 
                     <div class="user-profile">
-                        <img src="public/images/img_rectangle_11_1.webp" alt="Image" class="user-profile_image" />
+                        <img src="public/images/rectangle-4.webp" alt="Image" class="user-profile_image" />
                         <div class="user-profile_content">
                             <h5 class="user-profile_title ui heading size-h3">
                                 Save an animal from a slaughterhouse (abhaydaan)
@@ -176,7 +172,31 @@
                     </div>
 
                     <div class="user-profile">
-                        <img src="public/images/img_rectangle_12.webp" alt="Image" class="user-profile_image" />
+                        <img src="public/images/rectangle-5.webp" alt="Image" class="user-profile_image" />
+                        <div class="user-profile_content">
+                            <h6 class="user-profile_title ui heading size-h3">
+                                Medical treatment for animals and birds
+                            </h6>
+                            <div>
+                                <button id="donate-button-1"
+                                    class="user-profile_button ui button main_cream size-xs fill round">
+                                    Donate
+                                </button>
+                            </div>
+                            <div class="add-to-cart" style="display: none;">
+                                <button id="priceButton" class="input-box-1">
+                                    <span class="currency">₹ 500 X</span>
+                                    <input type="number" id="multiplyValue" placeholder="0" class="input-size" />
+                                    <span class="finalValue"></span>
+                                </button>
+                                <button id="add-to-cart-button" class="add-to-cart_button size-xs fill round">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-profile">
+                        <img src="public/images/rectangle-6.webp" alt="Image" class="user-profile_image" />
                         <div class="user-profile_content">
                             <h6 class="user-profile_title ui heading size-h3">
                                 Medical treatment for animals and birds
@@ -203,7 +223,7 @@
                 <div class="flex-col-center-center column">
                     <div class="faq-section container-xs">
                         <div class="faq-section_headings">
-                            <h2 class="ui heading size-h2">FAQ's about donation</h2>
+                            <h2 class="ui card size-h2">FAQ's about donation</h2>
                             <p class="faq-section_description ui text size-p">
                                 Cras tincidunt lobortis feugiat vivamus at morbi leo urna molestie atole elementum eu
                                 facilisis faucibus interdum posuere.
@@ -214,7 +234,7 @@
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
                                     Will I get tax benefits if I donate?
-                                    <img src="/public/images/img_plus.svg" alt="Toggle icon" class="faq-icon" />
+                                    <img src="/public/images/white-plus.svg" alt="Toggle icon" class="faq-icon" />
                                 </div>
                                 <div class="accordion-content ui text size-p">
                                     <p>The Shrimad Rajchandra Jivamaitridham Project is funded by Shrimad Rajchandra
@@ -232,7 +252,7 @@
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
                                     Can we find out where exactly and for whom our donation is used?
-                                    <img src="/public/images/img_plus.svg" alt="Toggle icon" class="faq-icon" />
+                                    <img src="/public/images/white-plus.svg" alt="Toggle icon" class="faq-icon" />
                                 </div>
                                 <div class="accordion-content ui text size-p">
                                     <p>Yes</p>
@@ -242,7 +262,7 @@
                             <div class="accordion-item">
                                 <div class="accordion-header" onclick="toggleAccordion(this)">
                                     How is this project funded?
-                                    <img src="/public/images/img_plus.svg" alt="Toggle icon" class="faq-icon" />
+                                    <img src="/public/images/white-plus.svg" alt="Toggle icon" class="faq-icon" />
                                 </div>
                                 <div class="accordion-content ui text size-p">
                                     <p>Our primary source of funding is the generous donations of individual donors,
@@ -262,7 +282,7 @@
                 <div class="footer_column">
                     <div class="footer_column--main">
                         <div class="footer_logo-column container-xs">
-                            <img src="public/images/img_footer_logo.svg" alt="Footer Logo" class="footer_logo" />
+                            <img src="public/images/logo.svg" alt="Footer Logo" class="footer_logo" />
                         </div>
                         <div class="footer_divider"></div>
                     </div>
@@ -274,32 +294,32 @@
                                     <a href="#">
                                         <p class="footer_link ui heading size-h3">Contact us</p>
                                     </a>
-                                    <p class="footer_address ui text size-p">
+                                    <p class="footer_address ui footer size-p">
                                         Shrimad Rajchandra Love and Care<br />
                                         Patel Chambers, 3rd Floor, Plot No.13,<br />
                                         Shrimad Rajchandraji Marg,<br />
                                         Opera House, Mumbai 400004.
                                     </p>
                                     <div class="footer_contact-details">
-                                        <p class="footer_address ui text size-p">
+                                        <!-- <p class="footer_address ui text size-p">
                                             Our team responds to questions from 8:30 AM - 5 PM (ET) Monday through
                                             Friday.
-                                        </p>
+                                        </p> -->
                                         <div class="footer_contact-methods">
                                             <div class="footer_contact-item">
                                                 <img src="public/images/img_call.svg" alt="Call Icon"
                                                     class="header_contact_icon" />
-                                                <p class="ui text size-p">+91 22 40023377</p>
+                                                <p class="ui footer size-p">+91 22 40023377</p>
                                             </div>
-                                            <div class="footer_contact-item--secondary">
+                                            <!-- <div class="footer_contact-item--secondary">
                                                 <img src="public/images/img_call.svg" alt="Alternate Call Icon"
                                                     class="header_contact_icon" />
                                                 <p class="ui text size-p">+91 22 40024477</p>
-                                            </div>
+                                            </div> -->
                                             <div class="footer_contact-item--email">
                                                 <img src="public/images/img_lock.svg" alt="Email Icon"
                                                     class="footer_icon--email" />
-                                                <p class="ui text size-p">info@loveandcare.srmd.org</p>
+                                                <p class="ui footer size-p">info@loveandcare.srmd.org</p>
                                             </div>
                                         </div>
                                     </div>
@@ -308,26 +328,26 @@
                                 <div class="footer_links-column">
                                     <div class="footer_links-row">
                                         <div class="footer_links-header">
-                                            <p class="footer_link ui heading size-h3">Website links</p>
+                                            <p class="footer_link ui heading size-h3">Other links</p>
                                             <ul class="footer_links-list">
                                                 <li>
                                                     <a href="#">
-                                                        <p class="ui text size-p">Shrimad Rajchandra Mission Dharampur
+                                                        <p class="ui footer size-p">Shrimad Rajchandra Mission Dharampur
                                                         </p>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <p class="ui text size-p">Shrimad Rajchandra Hospital and
+                                                        <p class="ui footer size-p">Shrimad Rajchandra Hospital and
                                                             Research Centre</p>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        <p class="ui text size-p">Shrimad Rajchandra Vidyapeeth</p>
+                                                        <p class="ui footer size-p">Shrimad Rajchandra Vidyapeeth</p>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a href="#">
                                                         <p class="ui text size-p">Shrimad Rajchandra Divinetouch</p>
                                                     </a>
@@ -336,14 +356,14 @@
                                                     <a href="#">
                                                         <p class="ui text size-p">SRMD Youth</p>
                                                     </a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
 
                                         <div class="footer_newsletter-column">
                                             <div class="footer_newsletter-header">
                                                 <p class="footer_link ui heading size-h3">Stay Informed</p>
-                                                <p class="footer_newsletter-description ui text size-p">
+                                                <p class="footer_newsletter-description ui footer size-p">
                                                     Join our email newsletter to learn more about how we're working to
                                                     end animal cruelty.
                                                 </p>
@@ -362,9 +382,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="footer_consultation-row">
+                                    <!-- <div class="footer_consultation-row">
                                         <p class="ui text size-button">Book a consultation</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -374,7 +394,7 @@
             </footer>
             <div class="footer_bottom-row">
                 <div class="footer_copyright-row container-xs">
-                    <p class="footer_copyright-text ui text size-p">
+                    <p class="footer_copyright-text ui footer size-p">
                         © copyright 2024 Shrimad Rajchandra Love and Care, All Rights Reserved
                     </p>
                 </div>

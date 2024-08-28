@@ -11,9 +11,15 @@
 :root {
   /*------ Color variables ------*/
   --college_maroon: #953a57;
+  --fiery_orange: #ce7234;
+  --bright_orange: #dd9e43;
+  --pale_cream: #e3e1ce;
+  --creamy_ivory: #e9e3c6;
   --experience_yellow: #ffdf88;
   --main_brown: #5d2a29;
+  --dark_brown: #51332a;
   --main_cream: #fffae3;
+
   --main_darker: #f7efcb;
   --pink_900: #84334d;
   --yellow_50_33: #fffae333;

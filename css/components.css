@@ -8,6 +8,13 @@
 */
 
 @font-face {
+  font-family: "BergenSans-Regular";
+  src: url("/fonts/BergenSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "P22 Mackinac Pro";
   src: url("/fonts/P22MackinacPro-Book_25.otf") format("opentype");
   font-weight: normal;
@@ -53,6 +60,20 @@
   border-radius: var(--radius-lg);
 }
 
+.donate.button {
+  text-align: center;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--main_brown);
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: var(--main_cream);
+  border-radius: var(--radius-lg);
+}
+
 /* 2. Input CSS */
 .ui.input.round {
   border-radius: var(--radius-md);
@@ -76,7 +97,7 @@
   justify-content: center;
   cursor: text;
   color: var(--main_cream);
-  font-family: "CoFo Sans VF", sans-serif;
+  font-family: "BergenSans-Regular", sans-serif;
   font-size: 16px;
   border-radius: var(--radius-md);
   border: 1px solid var(--main_cream);
@@ -115,12 +136,17 @@
 
 .ui.text {
   color: var(--main_cream);
-  font-family: "CoFo Sans VF", sans-serif;
+  font-family: "BergenSans-Regular", sans-serif;
+}
+
+.ui.footer {
+  color: var(--main_cream);
+  font-family: "Inter", sans-serif;
 }
 
 /* 5. Heading CSS */
 .ui.heading.size-h1 {
-  font-family: P22 Mackinac Pro;
+  font-family: BergenSans-Regular;
   font-size: 50px;
   font-weight: 500;
   font-style: bold;
@@ -140,7 +166,7 @@
 }
 
 .ui.heading.size-h2 {
-  font-family: P22 Mackinac Pro;
+  font-family: BergenSans-Regular;
   font-size: 40px;
   font-weight: 500;
   font-style: bold;
@@ -158,17 +184,24 @@
   }
 }
 
-
 .ui.heading.size-h3 {
-  font-family: P22 Mackinac Pro;
+  font-family: BergenSans-Regular;
   font-size: 22px;
   font-weight: 500;
   font-style: bold;
 }
 
 .ui.heading {
-  color: var(--main_brown);
-  font-family: P22 Mackinac Pro;
+  color: var(--dark_brown);
+  font-family: BergenSans-Regular;
+}
+
+.ui.card {
+  color: white;
+  font-family: BergenSans-Regular;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: bold;
 }
 
 /* container 6 */

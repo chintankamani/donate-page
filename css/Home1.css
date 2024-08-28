@@ -1,6 +1,13 @@
 /* Common CSS */
 
 @font-face {
+  font-family: "BergenSans-Regular";
+  src: url("/fonts/BergenSans-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "P22 Mackinac Pro";
   src: url("/fonts/P22MackinacPro-Book_25.otf") format("opentype");
   font-weight: normal;
@@ -36,15 +43,15 @@
   flex-direction: column;
   gap: var(--space-xl);
   width: 100%;
-  background-color: var(--main_darker);
+  background-color: var(--creamy_ivory);
   padding: var(--space-md);
-  border-radius: var(--radius-sm);
+  /* border-radius: var(--radius-sm); */
 }
 
 .user-profile_image {
   height: 214px;
   object-fit: cover;
-  border-radius: var(--radius-xs);
+  /* border-radius: var(--radius-xs); */
 }
 
 .user-profile_content {
@@ -58,7 +65,7 @@
   padding-bottom: 30px;
 }
 
-.user-profile_button {
+/* .user-profile_button {
   color: var(--main_brown) !important;
   margin-bottom: 32px;
   padding: 0 33px;
@@ -67,6 +74,23 @@
   height: 52px;
   border-radius: 26px !important;
   border: 1px solid var(--main_cream);
+} */
+
+.header-button {
+  display: block;
+  color: var(--main_brown) !important;
+  padding: 0 33px;
+  background-color: var(--main_cream) !important;
+  width: 149px;
+  height: 52px;
+  border-radius: 26px !important;
+  border: 1px solid var(--main_cream);
+}
+
+@media (max-width: 768px) {
+  .header-button {
+    display: none;
+  }
 }
 
 .footer_address {
@@ -110,11 +134,23 @@
 
 .rowlayerone_one {
   height: 540px;
+  position: relative;
   padding: 50px 0;
-  background-color: var(--college_maroon);
-  background-image: url(../public/images/donate-banner.webp);
-  background-size: cover;
+  background-color: var(--fiery_orange);
+  /* background-image: url(../public/images/background.svg); */
+  /* background-size: cover; */
   background-repeat: no-repeat;
+}
+
+.background-flex {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -127,7 +163,7 @@
 .columnlayerone {
   display: flex;
   flex-direction: column;
-  gap: 106px;
+  gap: 43px;
   margin-bottom: 140px;
 }
 
@@ -148,7 +184,15 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--space-md);
-  padding: 0 60px;
+  padding: 0 90px;
+}
+
+.main-logo {
+  display: flex;
+  background-color: var(--pale_cream);
+  height: 41px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -166,8 +210,8 @@
 }
 
 .header_logo {
-  height: 32px;
-  width: 16%;
+  height: 51px;
+  width: 138px;
   object-fit: contain;
 }
 
@@ -209,7 +253,7 @@
   appearance: none;
   background-color: #953a57;
   color: var(--main_cream);
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
   font-size: 16px;
   padding: 0 12px;
   width: 20%;
@@ -237,7 +281,7 @@
 
 .header_language-dropdown {
   color: var(--main_cream);
-  font-family: CoFo Sans VF;
+  font-family: BergenSans-Regular;
   font-size: 16px;
   padding: 0 12px;
   width: 70px;
@@ -248,10 +292,20 @@
   justify-content: center;
 }
 
+.header-text {
+  color: white;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  max-width: 758px;
+  margin-top: 30px;
+}
+
 .home_rowheadings {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 38px;
+  align-items: center;
   padding: 0 56px;
 }
 
@@ -262,7 +316,7 @@
 }
 
 .home_rowheadings_quote {
-  color: var(--main_cream) !important;
+  color: var(--experience_yellow) !important;
   text-align: center;
   width: 531px;
   line-height: 60px;
@@ -300,7 +354,7 @@
 
 .column {
   padding: 88px 0;
-  background-color: var(--experience_yellow);
+  background-color: var(--bright_orange);
 }
 
 @media only screen and (max-width: 1050px) {
@@ -320,7 +374,7 @@ footer {
   padding: 0 138px;
   flex-direction: column;
   gap: 80px;
-  background-color: var(--main_brown);
+  background-color: var(--dark_brown);
 }
 
 @media only screen and (max-width: 1050px) {
@@ -380,8 +434,8 @@ footer {
 }
 
 .footer_logo {
-  height: 32px;
-  width: 218px;
+  height: 43.05px;
+  width: 126.24px;
   object-fit: contain;
 }
 
@@ -693,7 +747,7 @@ footer {
 }
 
 .add-to-cart_button {
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
   color: var(--main_brown) !important;
   padding: 20px 0;
   width: 100%;
@@ -708,7 +762,7 @@ footer {
   border-radius: 26px !important;
   width: 100%;
   color: var(--main_brown);
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
 }
 
 .input-box-1 {
@@ -723,25 +777,25 @@ footer {
 .currency-1 {
   color: var(--main_brown);
   padding-right: 2px;
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
 }
 
 .currency {
   color: var(--main_brown);
   padding-right: 10px;
   width: 110px;
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
 }
 
 .input-box input::placeholder {
   color: var(--main_brown);
   width: 150px;
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
 }
 
 .finalValue {
   width: 200px;
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
   color: var(--main_brown);
 }
 
@@ -751,7 +805,7 @@ footer {
   padding: 4px 0;
   padding-left: 4px;
   border-radius: 3px;
-  font-family: "CoFo Sans VF";
+  font-family: "BergenSans-Regular";
   color: var(--main_brown);
 }
 
@@ -793,7 +847,7 @@ footer {
 .accordion-item {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 2px solid var(--main_brown);
+  border-bottom: 2px solid white;
 }
 
 .accordion-header {
@@ -803,10 +857,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-self: start;
-  font-family: "P22 Mackinac Pro", sans-serif;
+  font-family: "BergenSans-Regular", sans-serif;
   font-size: 22px;
   font-weight: 500;
-  color: var(--main_brown);
+  color: white;
 }
 
 .accordion-header:hover {
@@ -815,7 +869,7 @@ footer {
 .accordion-content {
   display: none; /* Hidden by default */
   padding: 15px 0;
-  color: var(--main_brown) !important;
+  color: white;
   width: 85%;
   line-height: 22px;
 }
@@ -869,7 +923,7 @@ footer {
 }
 
 .faq-section_description {
-  color: var(--main_brown) !important;
+  color: white;
   align-self: stretch;
   line-height: 22px;
   text-align: center;
