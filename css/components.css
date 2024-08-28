@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "BergenSans-Regular";
-  src: url("/fonts/BergenSans-Regular.otf") format("opentype");
+  src: url("/fonts/BergenSans.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +26,7 @@
   src: url("/fonts/CoFoSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} 
 
 /* 1. Button CSS */
 .ui.button.round {
@@ -37,7 +37,7 @@
   height: 52px;
   padding-left: 34px;
   padding-right: 34px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .ui.button.fill.main_cream {
@@ -139,9 +139,17 @@
   font-family: "BergenSans-Regular", sans-serif;
 }
 
+.ui.accordion {
+  color: var(--main_cream);
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 22px; 
+}
+
+
 .ui.footer {
   color: var(--main_cream);
-  font-family: "Inter", sans-serif;
+  font-family: Inter;
 }
 
 /* 5. Heading CSS */

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "BergenSans-Regular";
-  src: url("/fonts/BergenSans-Regular.otf") format("opentype");
+  src: url("/fonts/BergenSans.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -138,9 +138,10 @@
   padding: 20px 0;
   background-color: var(--fiery_orange);
   background-image: url(../public/images/background.svg);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x; /* Updated to repeat the background horizontally */
   background-position: bottom 18px center;
 }
+
 
 .background-flex {
   display: flex;
@@ -626,7 +627,7 @@ footer {
 .footer_newsletter-button {
   color: var(--main_brown) !important;
   padding-left: 34px;
-  padding-right: 34px;
+  font-family: Inter;
   background-color: var(--main_cream) !important;
   align-self: stretch;
   height: 52px;
@@ -774,10 +775,16 @@ footer {
 .input-box-1 {
   display: flex;
   align-items: center;
-  padding: 13px 40px;
+  padding: 13px 20px;
   background-color: var(--main_cream);
   border-radius: 26px !important;
   width: 100%;
+}
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .input-box-1 {
+    position: relative;
+  }
 }
 
 .currency-1 {
@@ -789,7 +796,7 @@ footer {
 .currency {
   color: var(--main_brown);
   padding-right: 10px;
-  width: 110px;
+  width: 75px;
   font-family: "BergenSans-Regular";
 }
 
@@ -800,19 +807,40 @@ footer {
 }
 
 .finalValue {
-  width: 200px;
+  width: 50px;
+  padding-left: 10px;
   font-family: "BergenSans-Regular";
   color: var(--main_brown);
+  white-space: nowrap;
+}
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .finalValue {
+    width: 60px;
+    padding-left: 2px;
+    top: 16px;
+    right: 10px;
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+  }
 }
 
 .input-size {
-  width: 50px;
+  width: 35px;
   background-color: white;
   padding: 4px 0;
   padding-left: 4px;
   border-radius: 3px;
   font-family: "BergenSans-Regular";
   color: var(--main_brown);
+  -moz-appearance: textfield; /* Removes the spinner in Firefox */
+}
+
+.input-size::-webkit-outer-spin-button,
+.input-size::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Removes the spinner in Chrome, Safari, and Edge */
 }
 
 .box-width {
@@ -938,4 +966,20 @@ footer {
 .faq-icon {
   width: 20px;
   height: 20px;
+}
+
+.footer-textt {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 21.28px;
+  letter-spacing: 4%;
+  color: var(--pale_cream);
+  opacity: 0.5;
+}
+
+input[name="Email Field"]::placeholder {
+  color: var(--pale_cream);
+  opacity: 0.5; /* 50% opacity */
 }
