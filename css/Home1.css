@@ -677,6 +677,7 @@ footer {
   height: 58px;
   border-radius: 26px !important;
   border: 1px solid var(--main_cream);
+  font-family: Inter;
 }
 
 .donation-form {
