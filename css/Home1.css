@@ -647,7 +647,7 @@ footer {
 .footer_bottom-row {
   padding-top: var(--space-xs);
   padding-bottom: var(--space-xs);
-  background-color: var(--main_darker);
+  background-color: var(--new_cream);
   display: flex;
   justify-content: center;
 }
