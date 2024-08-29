@@ -45,6 +45,7 @@
   width: 100%;
   background-color: var(--creamy_ivory);
   padding: var(--space-md);
+  height: 451px;
   /* border-radius: var(--radius-sm); */
 }
 
@@ -57,12 +58,13 @@
 .user-profile_content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .user-profile_title {
   text-align: center;
   line-height: 26px;
-  padding-bottom: 30px;
 }
 
 /* .user-profile_button {
@@ -141,7 +143,6 @@
   background-repeat: repeat-x; /* Updated to repeat the background horizontally */
   background-position: bottom 18px center;
 }
-
 
 .background-flex {
   display: flex;
@@ -578,6 +579,7 @@ footer {
   align-self: stretch;
   flex-direction: column;
   align-items: start;
+  max-width: 233px;
 }
 
 .footer_newsletter-column {
@@ -902,25 +904,24 @@ footer {
 }
 
 .accordion-content {
-  display: none; /* Hidden by default */
+  display: none; 
   padding: 15px 0;
   color: white;
   width: 85%;
   line-height: 22px;
+  font-size: 15px;
+  max-width: 771.76px;
 }
 
+
 .accordion-item.active .accordion-content {
-  display: block; /* Visible when active */
+  display: block;
 }
 
 .accordion-content p {
   margin: 15px 0;
 }
 
-/* .accordion-item.active .accordion-content {
-  max-height: 400px;
-  padding: 15px 0;
-} */
 
 .faq-section {
   display: flex;

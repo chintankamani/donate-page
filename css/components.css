@@ -149,6 +149,7 @@
 
 .ui.footer {
   color: var(--main_cream);
+  opacity: 80%;
   font-family: Inter;
 }
 
