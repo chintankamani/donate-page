@@ -137,7 +137,7 @@
 .rowlayerone_one {
   height: 540px;
   position: relative;
-  padding: 20px 0;
+  padding: 40px 0;
   background-color: var(--fiery_orange);
   background-image: url(../public/images/background.svg);
   background-repeat: repeat-x; /* Updated to repeat the background horizontally */
@@ -165,7 +165,7 @@
 .columnlayerone {
   display: flex;
   flex-direction: column;
-  gap: 43px;
+  gap: 50px;
   margin-bottom: 140px;
 }
 
@@ -184,7 +184,7 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: var(--space-md);
   padding: 0 90px;
@@ -927,7 +927,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 76px;
+  gap: 80px;
 }
 
 @media only screen and (max-width: 1050px) {

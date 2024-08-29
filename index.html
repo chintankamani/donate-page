@@ -9,34 +9,9 @@
     <meta name="description"
         content="Support the Shrimad Rajchandra Animal Hospital by donating for animal shelters, food, and medical treatment. Your contribution makes a difference. Tax benefits available under section 886." />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="./css/font.css" /> -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="stylesheet" type="text/css" href="./css/components.css" />
     <link rel="stylesheet" type="text/css" href="./css/Home1.css" />
-
-    <!-- Internal CSS styles -->
-    <!-- <style>
-        html,
-        /* body {
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        .donate-navigation {
-            height: 100vh;
-            width: 100%;
-            color: white;
-            overflow: hidden;
-        } */
-
-        /* .donate-navigation iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            overflow: hidden;
-        } */
-    </style> -->
 </head>
 
 <body>
@@ -49,10 +24,6 @@
                     <div class="columnlayerone">
                         <header class="header">
                             <img src="public/images/logo.svg" alt="Header Image" class="header_logo" />
-                            <button id="donate-button"
-                                class="header-button button donate main_cream size-xs fill round">
-                                Donate
-                            </button>
                         </header>
                         <div class="row">
                             <div class="home_rowheadings container-xs">
@@ -220,11 +191,6 @@
                     <div class="faq-section container-xs">
                         <div class="faq-section_headings">
                             <h2 class="ui card size-h2">FAQ's about donation</h2>
-                            <p class="faq-section_description ui text size-p">
-                                Cras tincidunt lobortis feugiat vivamus at morbi leo urna molestie atole elementum eu
-                                facilisis faucibus interdum
-                                posuere.
-                            </p>
                         </div>
 
                         <div class="accordion">
@@ -299,21 +265,12 @@
                                         Opera House, Mumbai 400004.
                                     </p>
                                     <div class="footer_contact-details">
-                                        <!-- <p class="footer_address ui text size-p">
-                                            Our team responds to questions from 8:30 AM - 5 PM (ET) Monday through
-                                            Friday.
-                                        </p> -->
                                         <div class="footer_contact-methods">
                                             <div class="footer_contact-item">
                                                 <img src="public/images/img_call.svg" alt="Call Icon"
                                                     class="header_contact_icon" />
                                                 <p class="ui footer size-p">+91 22 40023377</p>
                                             </div>
-                                            <!-- <div class="footer_contact-item--secondary">
-                                                <img src="public/images/img_call.svg" alt="Alternate Call Icon"
-                                                    class="header_contact_icon" />
-                                                <p class="ui text size-p">+91 22 40024477</p>
-                                            </div> -->
                                             <div class="footer_contact-item--email">
                                                 <img src="public/images/img_lock.svg" alt="Email Icon"
                                                     class="footer_icon--email" />
@@ -346,12 +303,6 @@
                                                         <p class="ui footer size-p">Shrimad Rajchandra Hospital and Research Centre</p>
                                                     </a>
                                                 </li>
-                                                <!-- <li>
-                                                    <a href="#">
-                                                        <p class="ui text size-p">Shrimad Rajchandra Divinetouch</p>
-                                                    </a>
-                                                </li> -->
-
                                             </ul>
                                         </div>
 
@@ -375,10 +326,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- <div class="footer_consultation-row">
-                                        <p class="ui text size-button">Book a consultation</p>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -433,28 +380,6 @@
                 });
             });
         });
-
-        // function toggleAccordion(element) {
-        //         const accordionItem = element.parentElement;
-        //         const accordionContent = accordionItem.querySelector('.accordion-content');
-
-        //         if (accordionItem.classList.contains('active')) {
-        //             accordionItem.classList.remove('active');
-        //             // Use setTimeout to ensure the transition is applied before hiding the content
-        //             setTimeout(() => {
-        //                 accordionContent.style.maxHeight = null;
-        //             }, 400); // Matches the CSS transition duration
-        //         } else {
-        //             const activeItems = document.querySelectorAll('.accordion-item.active');
-        //             activeItems.forEach((item) => {
-        //                 item.classList.remove('active');
-        //                 item.querySelector('.accordion-content').style.maxHeight = null;
-        //             });
-
-        //             accordionItem.classList.add('active');
-        //             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-        //         }
-        //     }
 
         function toggleAccordion(element) {
             const accordionItem = element.parentElement;
